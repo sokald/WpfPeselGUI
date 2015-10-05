@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfPeselGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="check pesel" Height="265" Width="248.5">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="259*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="wprowadz pesel" Margin="0,51,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="95" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" Height="26" Grid.ColumnSpan="2"/>
+        <Button Content="sprawdz pesel" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click" HorizontalContentAlignment="Center" Grid.Column="1" Height="20"/>
+        <TextBox x:Name="t" HorizontalAlignment="Left" Height="24" Margin="69,55,-18,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="lResult" Content="wynik" HorizontalAlignment="Left" Margin="0,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.9,-0.273" Width="120" Grid.Column="1"/>
+    </Grid>
+</Window>
